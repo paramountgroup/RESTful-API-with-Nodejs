@@ -22,7 +22,6 @@ class LevelDatabase {
                     console.log("Not found!", err);
                     reject(err);
                 } else {
-                } else {
                     resolve(JSON.parse(value));
                 }
             });
