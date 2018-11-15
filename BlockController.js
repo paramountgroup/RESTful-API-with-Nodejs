@@ -15,9 +15,10 @@ class BlockController {
         console.log("in BlockController constructor");
         this.app = app;
         this.blocks = [];
-        this.initializeMockData();
+        //  this.initializeMockData();
         this.getBlockByIndex();
         this.postNewBlock();
+        console.log("finished BlockController constructor");
     }
 
     /**
@@ -26,9 +27,9 @@ class BlockController {
     getBlockByIndex() {
         this.app.get("/api/block/:index", (req, res) => {
             console.log("in getBlockByIndex");
-           //res.send('Hello World with nodemon');
-           console.log("in getBlockByIndex and index is: " + req.params.index);
-           // res.send(req.params.index);
+            //res.send('Hello World with nodemon');
+            console.log("in getBlockByIndex and index is: " + req.params.index);
+            // res.send(req.params.index);
             res.send(this.blocks[req.params.index]);
             // Add your code here
         });
@@ -42,19 +43,19 @@ class BlockController {
             //console.log(" in postNewBlock and req.params.data is: " + newBlock.body);
             let newBlock = new BlockClass.Block(req.params.data);
             console.log(" in postNewBlock and newBlock.body is: " + newBlock.body);
-           newBlock.height = this.blocks.length;
-                newBlock.hash = SHA256(JSON.stringify(newBlock)).toString();
-                this.blocks.push(newBlock);
-                res.send(newBlock);
+            newBlock.height = this.blocks.length;
+            newBlock.hash = SHA256(JSON.stringify(newBlock)).toString();
+            this.blocks.push(newBlock);
+            res.send(newBlock);
 
-            
+
             // Add your code here
         });
     }
 
     /**
      * Help method to inizialized Mock dataset, adds 10 test blocks to the blocks array
-     */
+    
     initializeMockData() {
         if(this.blocks.length === 0){
             for (let index = 0; index < 10; index++) {
@@ -65,12 +66,14 @@ class BlockController {
                 this.blocks.push(blockAux);
             }
         }
-    }
+    } */
 
 }
+
+let myBlockChain = new BlockChain.Blockchain();
 
 /**
  * Exporting the BlockController class
  * @param {*} app 
  */
-module.exports = (app) => { return new BlockController(app);}
+module.exports = (app) => { return new BlockController(app); }

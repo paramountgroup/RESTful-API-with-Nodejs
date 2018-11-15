@@ -2,15 +2,21 @@
 
 const LevelDatabase = require('./LevelDatabase.js');
 
+//const level = require('level');
+//const chainDB = './chaindata';
+//const db = level(chainDB);
+
 class Blockchain {
     constructor() {
         //verify Genesis block and create if necessary
-        this.bd = new LevelDatabase.LevelDatabase();
+        this.db = new LevelDatabase.LevelDatabase();
         this.verifyGenesisBlock();
     }
 
     async verifyGenesisBlock() {
+        console.log("in verifyGenesisBlock - trying to verify the genesis block");
         const height = await this.getBlockHeight();
+        console.log("in verifyGenesisBlock - BlockHeight is: " + height);
         if (height === (-1)) {
             let genesisBlock = new Block("First Block - Genesis Block")
             // UTC timestamp
@@ -48,14 +54,23 @@ class Blockchain {
         return new Promise((resolve, reject) => {
             let i = -1;
             // Read the entire blockchain and count the blocks
-            db.createReadStream()
-                .on('data', data => {
-                    i++;
-                })
-                .on('error', err => reject(err))
-                .on('close', () => {
-                    resolve(i);
-                });
+            console.log("in getBlockHeight about to read the stream and i is: " + i);
+            try {
+                console.log("in getBlockHeight and db is: " + this.db);
+
+                const db = this.db
+                //console.log("in getBlockHeight and db is: " + db);
+                db.createReadStream()
+                    .on('data', data => {
+                        i++;
+                    })
+                    .on('error', err => reject(err))
+                    .on('close', () => {
+                        console.log("in getBlockHeight and closing i is: " + i);
+                        resolve(i);
+                    });
+            }
+            catch (err) { console.log("in getBlockHeight and had catch error : " + err); }
         });
     }
 

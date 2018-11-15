@@ -5,7 +5,9 @@ const chainDB = './chaindata';
 
 class LevelDatabase {
     constructor() {
+        console.log("in class LevelDatabase constructor ");
         this.db = level(chainDB);
+        console.log("in class LevelDatabase constructor this.db is: " + this.db);
     }
 
     //Add your other methods
