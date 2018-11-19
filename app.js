@@ -26,14 +26,16 @@ class BlockAPI {
     /**
      * Initilization of the Express framework
      */
-	initExpress() {
+    initExpress() {
+        console.log(" in app.js initExpress");
 		this.app.set("port", 8000);
 	}
 
     /**
      * Initialization of the middleware modules
      */
-	initExpressMiddleWare() {
+    initExpressMiddleWare() {
+        console.log(" in app.js initExpressMiddleware");
 		this.app.use(bodyParser.urlencoded({extended:true}));
 		this.app.use(bodyParser.json());
 	}
@@ -41,14 +43,16 @@ class BlockAPI {
     /**
      * Initilization of all the controllers
      */
-	initControllers() {
+    initControllers() {
+        console.log(" in app.js initControllers");
 		require("./BlockController.js")(this.app);
 	}
 
     /**
      * Starting the REST Api application
      */
-	start() {
+    start() {
+        console.log(" in app.js start()");
 		let self = this;
 		this.app.listen(this.app.get("port"), () => {
 			console.log(`Server Listening for port: ${self.app.get("port")}`);
