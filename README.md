@@ -69,7 +69,7 @@ Post a new block with data payload option to add data to the block body. The blo
 	    "time": "1542737794",
 	    "previousBlockHash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2"
 	}
-## Use Postman to test 
+## Use Postman to Test 
 API The Postman Echo API is service you can use to test your REST clients and make sample API calls. It provides endpoints for GET, POST, PUT, various auth mechanisms and other utility endpoints.
 
 
