@@ -76,7 +76,7 @@ API The Postman Echo API is service you can use to test your REST clients and ma
 
 
 Example of getting testing data postman
-![](/images/postmanexample.png) image1
+![postman example](images/postmanexample.png)
 
 Running the tests
 Explain how to run the automated tests for this system
