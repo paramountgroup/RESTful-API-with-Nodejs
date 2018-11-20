@@ -10,6 +10,7 @@ Udacity Blockchain developer project RESTful Web API with Node.js Framework by B
 ## Steps to follow
 
 1. Clone the repository to your local computer.
-2. Open the terminal and install the packages: `npm install`.
+2. Open the terminal in the directory you downloaded the repository and install npm: `npm install`.
+3. install express.js: npm install express --save
 3. Run your application `node app.js`
 4. Test your Endpoints with Curl or Postman.
