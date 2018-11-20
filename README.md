@@ -33,25 +33,25 @@ The API Creates Two Endpoints per the project rubric
 **GET Block Endpoint**
 GET request using URL path with a block height parameter. The response for the endpoint provides a block object is JSON format.
 
-URL
-http://localhost:8000/block/[blockheight]
+	URL
+	http://localhost:8000/block/[blockheight]
 
-Example URL path:
-http://localhost:8000/block/0, where '0' is the block height.
+	Example URL path:
+	http://localhost:8000/block/0, where '0' is the block height.
 
-Response
-The response for the endpoint provides a block object is JSON format.
+	Response
+	The response for the endpoint provides a block object is JSON format.
 
-Example GET Response
-For URL, http://localhost:8000/block/0
+	Example GET Response
+	For URL, http://localhost:8000/block/0
 
-`{
-    "hash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2",
-    "height": 0,
-    "body": "First Block - Genesis Block",
-    "time": "1542737644",
-    "previousBlockHash": ""
-}`
+	`{
+					"hash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2",
+					"height": 0,
+					"body": "First Block - Genesis Block",
+					"time": "1542737644",
+					"previousBlockHash": ""
+	}`
 
 **POST Block Endpoint**
 Post a new block with data payload option to add data to the block body. The block body supports a string of text. The response for the endpoint provides the block object added the blockchain in JSON format.
