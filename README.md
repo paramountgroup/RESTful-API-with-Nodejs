@@ -2,18 +2,18 @@
 
 Udacity Blockchain developer project RESTful Web API with Node.js Framework by Bob Ingram
  
- * This program creates a web API using Node.js framework that interacts with my private blockchain
- * Submits and retrieves data using an application like postman or url on localhost port 8000 http://localhost:8000/api/block/
+ * This program creates a web API using Express.js framework that interacts with my private blockchain.
+ * Submits and retrieves data using an application like postman or url on localhost port 8000 http://localhost:8000/block/
  * The boilerplate code for this project was taken from the Udacity Web Services with Node.js lesson 2 
   practice express.js exercise and incorporates private blockchain from project 2.
 
 ## Getting Started - Steps to Follow
 
-1. Clone the repository to your local computer.
+1. Clone this repository to your local computer.
 2. Open the terminal in the directory you downloaded the repository and install npm: `npm install`.
 3. Install express.js: npm install express --save
 4. Run your application `node app.js`
-5. Test your Endpoints with Curl or Postman.  http://localhost:8000/api/block/
+5. Test your Endpoints with Curl or Postman.  http://localhost:8000/block/
 
 
 
@@ -70,12 +70,12 @@ Post a new block with data payload option to add data to the block body. The blo
 	    "previousBlockHash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2"
 	}
 ## Use Postman to Test 
-API The Postman Echo API is service you can use to test your REST clients and make sample API calls. It provides endpoints for GET, POST, PUT, various auth mechanisms and other utility endpoints.
+API The Postman Echo API is service you can use to test your REST clients and make sample API calls. It provides endpoints for GET, POST, PUT, various auth mechanisms and other utility endpoints. Availalble at https://learning.getpostman.com/
 
 
 
 
-Example of getting testing data postman
+## Example of getting testing data postman
 
 
 ![postman example](https://github.com/paramountgroup/RESTful-API-with-Nodejs/blob/master/images/postmanexample.PNG)
