@@ -1,6 +1,6 @@
 # RESTful-API-wth-Node.js
 
-*Udacity Blockchain developer project RESTful Web API with Node.js Framework by Bob Ingram
+Udacity Blockchain developer project RESTful Web API with Node.js Framework by Bob Ingram
  * 
  * This program creates a web API using Node.js framework that interacts with my private blockchain
  * Submits and retrieves data using an application like postman or url on localhost port 8000 http://localhost:8000/api/block/
