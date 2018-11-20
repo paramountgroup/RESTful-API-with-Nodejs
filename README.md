@@ -7,33 +7,29 @@ Udacity Blockchain developer project RESTful Web API with Node.js Framework by B
  * The boilerplate code for this project was taken from the Udacity Web Services with Node.js lesson 2 
   practice express.js exercise and incorporates private blockchain from project 2.
 
-## Getting Started
-## Steps to follow
+## Getting Started - Steps to Follow
 
 1. Clone the repository to your local computer.
 2. Open the terminal in the directory you downloaded the repository and install npm: `npm install`.
 3. Install express.js: npm install express --save
-3. Run your application `node app.js`
-4. Test your Endpoints with Curl or Postman.  http://localhost:8000/api/block/
+4. Run your application `node app.js`
+5. Test your Endpoints with Curl or Postman.  http://localhost:8000/api/block/
 
 
 
+##Prerequisites  - Node.js
+This API requires node.js, node package manager (npm) & express.js
 
+###To install install node.js on your windows machine:
 
-
-Prerequisites
-What things you need to install the software and how to install them
-
+Download the Windows installer from the Nodes.js® web site.
+Run the installer 
+Follow the prompts in the installer 
+Restart your computer
 Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
 
-Give the example
-And repeat
 
-until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 Running the tests
