@@ -75,7 +75,7 @@ API The Postman Echo API is service you can use to test your REST clients and ma
 
 
 
-## Example of getting testing data postman
+## Example of getting testing data on postman
 
 
 ![postman example](https://github.com/paramountgroup/RESTful-API-with-Nodejs/blob/master/images/postmanexample.PNG)
