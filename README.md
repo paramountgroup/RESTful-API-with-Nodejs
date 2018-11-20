@@ -73,10 +73,10 @@ Post a new block with data payload option to add data to the block body. The blo
 API The Postman Echo API is service you can use to test your REST clients and make sample API calls. It provides endpoints for GET, POST, PUT, various auth mechanisms and other utility endpoints.
 
 
-![](images/postmanexample.png)
+
 
 Example of getting testing data postman
-
+![](images/postmanexample.png)
 Running the tests
 Explain how to run the automated tests for this system
 
