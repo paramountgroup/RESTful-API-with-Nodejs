@@ -1,6 +1,6 @@
 
-const BlockClass = require('./Block.js');
-const BlockChain = require('./BlockChain.js')
+const BlockClass = require('./block.js');
+const BlockChain = require('./blockchain.js')
 
 
 /********************************************************************
