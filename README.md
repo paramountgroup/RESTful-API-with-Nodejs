@@ -56,19 +56,19 @@ GET request using URL path with a block height parameter. The response for the e
 **POST Block Endpoint**
 Post a new block with data payload option to add data to the block body. The block body supports a string of text. The response for the endpoint provides the block object added the blockchain in JSON format.
 
-Response
-The response for the endpoint provides a block object in JSON format.
+	Response
+	The response for the endpoint provides a block object in JSON format.
 
-Example POST response
-For URL: http://localhost:8000/block/block
+	Example POST response
+	For URL: http://localhost:8000/block/block
 
-{
-    "hash": "157c14376cacca729dc82edc74ac87dffda527b1d026b3930396df1935c000f6",
-    "height": 1,
-    "body": "block",
-    "time": "1542737794",
-    "previousBlockHash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2"
-}
+	{
+	    "hash": "157c14376cacca729dc82edc74ac87dffda527b1d026b3930396df1935c000f6",
+	    "height": 1,
+	    "body": "block",
+	    "time": "1542737794",
+	    "previousBlockHash": "7749df61bffc6ca0c7f169fccbb52794ac66d485aa6114792d4b70413ce259a2"
+	}
 
 
 End with an example of getting some data out of the system or using it for a little demo
