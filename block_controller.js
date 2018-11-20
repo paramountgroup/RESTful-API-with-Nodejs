@@ -27,7 +27,7 @@ class BlockController {
      *************************************************************************************/
 
     getBlockByIndex() {
-        this.app.get("/api/block/:height?", (req, res) => {
+        this.app.get("/block/:height?", (req, res) => {
             // Listen for height param and convert to integer if necessary
             let height = parseInt(req.params.height, 10);
             // start error checking if ok send back requested block in json format
@@ -56,7 +56,7 @@ class BlockController {
     ***********************************************************************/
 
     postNewBlock() {
-        this.app.post("/api/block/:data?", (req, res) => {
+        this.app.post("/block/:data?", (req, res) => {
             // retrieve data and create new block
             if (req.params.data) {
                 let newBlock = new BlockClass.Block(req.params.data);
