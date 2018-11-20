@@ -78,7 +78,7 @@ API The Postman Echo API is service you can use to test your REST clients and ma
 Example of getting testing data postman
 
 
-![postman example](images/postmanexample.png)
+![postman example](/images/postmanexample.png)
 
 When running Postman you can type in the url http://localhost:8000/block/some-sample-data 
 and it will return the appropriate endpoint
