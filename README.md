@@ -79,7 +79,7 @@ Example of getting testing data postman
 
 ![postman example](https://raw.githubusercontent.com/paramountgroup/RESTful-API-with-Nodejs/images/postmanexample.png)
 ![postman example](/images/postmanexample.png)
-<img src="images/postmanexample.png" width="200">
+<img src="/images/postmanexample.png" width="200">
 
 When running Postman you can type in the url http://localhost:8000/block/some-sample-data 
 and it will return the appropriate endpoint
