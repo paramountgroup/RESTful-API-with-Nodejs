@@ -77,6 +77,10 @@ API The Postman Echo API is service you can use to test your REST clients and ma
 
 Example of getting testing data postman
 
+
+![](https://github.com/paramountgroup/RESTful-API-with-Nodejs/blob/master/images/postmanexample.PNG)
+
+
 ![postman example](https://raw.githubusercontent.com/paramountgroup/RESTful-API-with-Nodejs/images/postmanexample.png)
 ![postman example](/images/postmanexample.png)
 <img src="/images/postmanexample.png" width="200">
