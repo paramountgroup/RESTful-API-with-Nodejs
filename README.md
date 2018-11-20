@@ -76,21 +76,13 @@ API The Postman Echo API is service you can use to test your REST clients and ma
 
 
 Example of getting testing data postman
+
+
 ![postman example](images/postmanexample.png)
 
-Running the tests
-Explain how to run the automated tests for this system
+When running Postman you can type in the url http://localhost:8000/block/some-sample-data 
+and it will return the appropriate endpoint
 
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 Express.js - Express is a minimal and flexible Node.js web application framework.
