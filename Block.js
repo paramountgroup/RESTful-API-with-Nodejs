@@ -1,6 +1,8 @@
-/* ===== Block Class ==============================
-|  Class with a constructor for block 			   |
-|  ===============================================*/
+// JavaScript source code for block.js
+
+/******************************************************************
+*  Class with a constructor for block 			   
+*******************************************************************/
 
 class Block {
 	constructor(data){

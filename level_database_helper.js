@@ -3,6 +3,10 @@
 const level = require('level');
 const chaindb = './chaindata';
 
+/***********************************************************************************************
+ * create LevelDatabase class for storing and retrieving blockchain data in LevelDB
+ * *********************************************************************************************/
+
 class LevelDatabase {
     // create the LevelDB persistent database for storing blockchain
     constructor() {

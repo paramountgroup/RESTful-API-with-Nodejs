@@ -1,3 +1,4 @@
+// JavaScript source code block_controller.js used to create BlockController class
 
 const BlockClass = require('./block.js');
 const BlockChain = require('./blockchain.js')
@@ -9,10 +10,10 @@ const BlockChain = require('./blockchain.js')
 
 class BlockController {
 
-    /**
+    /*********************************************************************************************
      * Constructor to create a new BlockController, you need to initialize here all your endpoints
      * @param {*} app 
-     */
+     *********************************************************************************************/
 
     constructor(app) {
         this.app = app;
