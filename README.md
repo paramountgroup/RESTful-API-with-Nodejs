@@ -28,7 +28,7 @@ This API requires node.js, node package manager (npm) & express.js
 * Restart your computer
 
 
-## The API Creates Two Endpoints per the project rubric
+## The API Creates Two Endpoints
 
 **GET Block Endpoint**
 GET request using URL path with a block height parameter. The response for the endpoint provides a block object is JSON format.
