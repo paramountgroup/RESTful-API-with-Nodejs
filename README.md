@@ -99,7 +99,7 @@ Bob Ingram - Boilerplate code provided by Udacity Blockchain developer course
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
-Thanks to **Programming with Mosh** for the excellent expressjs tutorial on youtube.
+Thanks to **Programming with Mosh** for the excellent expressjs tutorial on youtube.  
  https://www.youtube.com/watch?v=pKd0Rpw7O48&t=1954s
 Thanks to Udacity mentors and memebers knowledge community for their insights.
 
